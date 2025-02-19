@@ -21,7 +21,7 @@ p <- ggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()
 ggplotly(p)
 
 
-```{r}
+```{r, echo=TRUE}
 
 
 library(ggplot2) 
@@ -32,6 +32,13 @@ p <- ggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()
 ggplotly(p)
 
 
+library(ggplot2)
+library(plotly)
+
+p <- ggplot(mtcars, aes(x = hp, y = mpg)) + 
+  geom_point()
+
+ggplotly(p)
 
 
 
