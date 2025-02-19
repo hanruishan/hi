@@ -5,26 +5,21 @@ output:
   flexdashboard::flex_dashboard:
     storyboard: true
 ---
+
 ### Introduction
 
-
-
-***
+------------------------------------------------------------------------
 
 ### Visualization
 
 
 
+library(ggplot2) library(plotly)
 
-library(ggplot2)
-library(plotly)
+p <- ggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()
 
-p <- ggplot(mtcars, aes(x = hp, y = mpg)) + 
-  geom_point()
-  
 ggplotly(p)
 
-p
+------------------------------------------------------------------------
 
-***
 ### Discussion
