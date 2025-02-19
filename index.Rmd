@@ -5,13 +5,13 @@ output:
   flexdashboard::flex_dashboard:
     storyboard: true
 ---
-### my data
+### Introduction
 
 
 
 ***
 
-#### plots
+### Visualization
 
 
 
@@ -24,4 +24,7 @@ p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
   
 ggplotly(p)
 
+p
 
+***
+### Discussion
