@@ -6,7 +6,7 @@ output:
     storyboard: true
 ---
 
-### Introduction
+### Background
 
 The AI is always confident and thinks it knows everything. I'm so sick of this. Hey AI, have you ever figured out the difference between traditional Chinese music and traditional Japanese music? Or are you just generalizing and lumping all oriental music together? I don't believe in your boasting, then let's prove with data whether you AI is pretending to know or not.
 
@@ -23,7 +23,7 @@ I had Sonic Visualizer automatically visualize the two pieces of music, which ma
 
 ------------------------------------------------------------------------
 
-### Visualization
+### Track-level features
 
 ```{r}
 
@@ -87,7 +87,7 @@ source("compmus.R")
 
 ------------------------------------------------------------------------
 
-### Discussion
+### Chroma features [pitch]
 
 
 
@@ -128,3 +128,35 @@ source("compmus.R")
 
 ```
 
+------------------------------------------------------------------------
+
+### Loudness [volume]
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
+### Timbre features [timbre]
+
+
+------------------------------------------------------------------------
+
+### Temporal features [duration]
+
+
+
+------------------------------------------------------------------------
+
+### Clustering
+
+
+------------------------------------------------------------------------
+
+### Contribution
