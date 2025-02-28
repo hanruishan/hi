@@ -61,6 +61,13 @@ However, this is only an overall comparison, and I hope to find more commonaliti
 
 ```
 
+
+------------------------------------------------------------------------
+
+### Chroma features [pitch]
+
+
+
 ```{r,echo=TRUE}
 
 library(tidyverse)
@@ -92,9 +99,7 @@ source("compmus.R")
 
 
 
-------------------------------------------------------------------------
 
-### Chroma features [pitch]
 
 
 
