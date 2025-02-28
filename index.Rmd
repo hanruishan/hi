@@ -68,7 +68,7 @@ However, this is only an overall comparison, and I hope to find more commonaliti
 
 
 
-```{r,echo=TRUE}
+```{r}
 
 library(tidyverse)
 source("compmus.R")
@@ -103,7 +103,26 @@ source("compmus.R")
 
 
 
-```{r, echo=TRUE}
+`
+
+
+
+
+
+
+
+```
+
+------------------------------------------------------------------------
+
+hello
+
+### Loudness [volume]
+
+
+```{r}
+
+
 
 
 "features/ruishan-h-2.json" |>                           # Change the track
@@ -138,15 +157,9 @@ source("compmus.R")
 
 
 
+
+
 ```
-
-------------------------------------------------------------------------
-
-hello
-
-### Loudness [volume]
-
-
 
 
 
