@@ -10,13 +10,13 @@ output:
 
 As an Asian student, I have a strong appreciation for Chinese and Japanese music. 
 However, I lack a formal music background, which makes it challenging for me to create my own compositions. 
-To overcome this, I turned to artificial intelligence for assistance and decided to try out Stable Audio. 
+To overcome this, I turned to artificial intelligence for assistance by using Stable Audio as the AI tool to generate music. 
 
 
-For my first composition, I input prompts such as Drum Kit, Flowing, Raw, Epic, Chinese Traditional Music, and Sentimental. 
-The outcome was this piece: https://stableaudio.com/1/share/60e8141d-6ac9-4928-8bf2-0d6d6e420736.
+First, I input prompts including Drum Kit, Flowing, Raw, Epic, Chinese Traditional Music, and Sentimental. 
+The outcome is this piece: https://stableaudio.com/1/share/60e8141d-6ac9-4928-8bf2-0d6d6e420736.
 
-This is the AI generated Chinese music track:
+This is the audio of the AI generated Chinese music track:
 
 <div>
   <audio controls>
@@ -26,10 +26,10 @@ This is the AI generated Chinese music track:
 </div>
 
 
-For my second composition, I used prompts that included Drum Kit, Flowing, Raw, Epic, Japanese Traditional Music, and Sentimental, 
+Furthermore, I use prompts that included Drum Kit, Flowing, Raw, Epic, Japanese Traditional Music, and Sentimental, 
 which resulted in this track: https://stableaudio.com/1/share/c8d896b9-e6ba-4646-a3bc-c81682f47011.
 
-This is AI generated Japanese music track:
+This is the audio of the AI generated Japanese music track:
 
 <div>
   <audio controls>
