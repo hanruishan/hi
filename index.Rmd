@@ -8,9 +8,15 @@ output:
 
 ### Background
 
+As an Asian student, I have a strong appreciation for Chinese and Japanese music. 
+However, I lack a formal music background, which makes it challenging for me to create my own compositions. 
+To overcome this, I turned to artificial intelligence for assistance and decided to try out Stable Audio. 
 
 
-This is Chinese track
+For my first composition, I input prompts such as Drum Kit, Flowing, Raw, Epic, Chinese Traditional Music, and Sentimental. 
+The outcome was this piece: https://stableaudio.com/1/share/60e8141d-6ac9-4928-8bf2-0d6d6e420736.
+
+This is the AI generated Chinese music track:
 
 <div>
   <audio controls>
@@ -19,7 +25,11 @@ This is Chinese track
   </audio>
 </div>
 
-This is Japanese track
+
+For my second composition, I used prompts that included Drum Kit, Flowing, Raw, Epic, Japanese Traditional Music, and Sentimental, 
+which resulted in this track: https://stableaudio.com/1/share/c8d896b9-e6ba-4646-a3bc-c81682f47011.
+
+This is AI generated Japanese music track:
 
 <div>
   <audio controls>
@@ -44,13 +54,6 @@ knitr::include_graphics("000051.png")
 
 
 ```
-As an Asian student, I have a strong appreciation for Chinese and Japanese music. 
-However, I lack a formal music background, which makes it challenging for me to create my own compositions. 
-To overcome this, I turned to artificial intelligence for assistance and decided to try out Stable Audio. 
-For my first composition, I input prompts such as Drum Kit, Flowing, Raw, Epic, Chinese Traditional Music, and Sentimental. 
-The outcome was this piece: https://stableaudio.com/1/share/60e8141d-6ac9-4928-8bf2-0d6d6e420736.
-For my second composition, I used prompts that included Drum Kit, Flowing, Raw, Epic, Japanese Traditional Music, and Sentimental, 
-which resulted in this track: https://stableaudio.com/1/share/c8d896b9-e6ba-4646-a3bc-c81682f47011.
 
 This box plot compares the musical characteristics of the two pieces of audio I generated with the class corpus, 
 and shows that the Chinese and Japanese music I produced using AI is very different for the class corpus. 
@@ -58,6 +61,11 @@ Interestingly, except for approachability and instrumentality, the music I produ
 arousal, danceability,engagingness,tempo, and valence, suggesting that the music has a slow tempo, is seriously soothing, 
 and sentimental. Asian drum music is quite different from the overall fast-paced, danceable, and inspiring music of the class corpus. 
 However, this is only an overall comparison, and I hope to find more commonalities in the detailed comparisons to come.
+
+
+
+
+
 ```{r, echo=TRUE}
 
 
