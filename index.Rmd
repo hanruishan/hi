@@ -8,30 +8,29 @@ output:
 
 ### Background
 
-Have you ever experienced the sensation of being an outsider? 
-As an Asian student in a predominantly European classroom, I often find that my cultural background and identity set me apart from my classmates. 
-This distinction can sometimes create a sense of isolation, particularly during group projects or social interactions where cultural references may differ. 
-However, I firmly believe in the transformative power of music to transcend cultural and social boundaries, enabling unique connections among individuals. 
-In other words, I see music as a universal language that can bridge the invisible divides we face.
-
-In my portfolio, I will explore the music I’ve created with AI and compare it to the music made by my classmates, who mostly come from European backgrounds. 
-I want to look at the similarities and differences between my Asian musical creations and our class music. 
-This will help me show shared emotions and cultural insights. 
-I will also analyze my AI-generated compositions visually, pointing out what makes them different from my peers' collaborative works. 
-Through this study, I hope to show that, despite our differences, we can connect meaningfully through music. 
-Let’s work together to break down barriers and create a shared understanding that celebrates both our diversity and our unity.
 
 
+This is Chinese track
 
-<audio controls>
-  <source src="ruishan-h-1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<div>
+  <audio controls>
+    <source src="ruishan-h-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
-<audio controls>
-  <source src="ruishan-h-2.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+This is Japanese track
+
+<div>
+  <audio controls>
+    <source src="ruishan-h-2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+
+
+
 
 ------------------------------------------------------------------------
 
@@ -67,6 +66,12 @@ However, this is only an overall comparison, and I hope to find more commonaliti
 
 
 ```
+
+
+
+
+
+
 
 
 ------------------------------------------------------------------------
