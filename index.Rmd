@@ -48,6 +48,51 @@ This is the audio of the AI generated Japanese music track:
 
 ```{r}
 
+library(ggplot2)
+library(tidyr)
+library(dplyr)  # 用于 select 函数
+library(tidyr)
+
+
+
+# 读取数据
+compmus_data <- read.csv("compmus2025.csv")
+
+# 筛选出两个观察对象的数据
+compmus_data_subset <- compmus_data[compmus_data$filename %in% c("ruishan-h-1", "ruishan-h-2"), ]
+
+# 将数据转换为长格式
+compmus_long <- pivot_longer(compmus_data_subset, 
+                             cols = c(approachability, arousal, danceability, 
+                                      engagingness, instrumentalness, tempo, valence),
+                             names_to = "variable", 
+                             values_to = "value")
+
+# 选择班级数据
+class_data <- compmus_data[compmus_data$filename != "ruishan-h-1" & compmus_data$filename != "ruishan-h-2", ]
+
+# 将班级数据转换为长格式
+class_data_long <- pivot_longer(class_data, 
+                                cols = c(approachability, arousal, danceability, 
+                                         engagingness, instrumentalness, tempo, valence),
+                                names_to = "variable", 
+                                values_to = "value")
+
+# 绘制密度图，显示班级数据和两条虚线
+ggplot(class_data_long, aes(x = value, fill = variable)) +
+  geom_density(alpha = 0.5) +  # 班级数据的密度图
+  geom_vline(data = compmus_long[compmus_long$filename == "ruishan-h-1", ], 
+             aes(xintercept = value), color = "blue", linetype = "dashed", size = 1) +  # 为 ruishan-h-1 添加虚线
+  geom_vline(data = compmus_long[compmus_long$filename == "ruishan-h-2", ], 
+             aes(xintercept = value), color = "red", linetype = "dashed", size = 1) +  # 为 ruishan-h-2 添加虚线
+  theme_minimal() +
+  labs(title = "the musical attributes distribution in class courpus",
+       x = "Variable Value",  
+       y = "Density (Probability Distribution)",  
+       caption = "Blue line represents AI Generated Chinese music, Red line represents AI generated Japanese music") +  # 添加标题和注释
+  facet_wrap(~ variable, scales = "free") +  # 分面图
+  theme(legend.position = "none",  
+        plot.caption = element_text(hjust = 0.5, color = "black", size = 10))  # 注释居中
 
 
 
