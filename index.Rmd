@@ -380,6 +380,65 @@ library(signal)
   theme_minimal() +
   labs(x = "Time (s)", y = "Energy Novelty")
 
+"features/ruishan-h-1.json" |>
+  compmus_energy_novelty() |> 
+  ggplot(aes(t, novelty)) +
+  geom_line() +
+  theme_minimal() +
+  ggtitle("The energy novelty of AI generated Chinese music track") +  
+  labs(x = "Time (s)", y = "Energy Novelty")
+
+"features/ruishan-h-2.json" |>
+  compmus_energy_novelty() |> 
+  ggplot(aes(t, novelty)) +
+  geom_line() +
+  theme_minimal() +
+  ggtitle("The energy novelty of AI generated Japanese music track") +  
+  labs(x = "Time (s)", y = "Energy Novelty")
+
+
+"features/ruishan-h-1.json" |>
+  compmus_spectral_novelty() |> 
+  ggplot(aes(t, novelty)) +
+  geom_line() +
+  theme_minimal() +
+  ggtitle("The spectral novelty of AI generated Chinese music track") +  
+  labs(x = "Time (s)", y = "Spectral Novelty")
+
+
+"features/ruishan-h-2.json" |>
+  compmus_spectral_novelty() |> 
+  ggplot(aes(t, novelty)) +
+  geom_line() +
+  theme_minimal() +
+  ggtitle("The spectral novelty of AI generated Japanese music track") +  
+  labs(x = "Time (s)", y = "Spectral Novelty")
+
+"features/ruishan-h-1.json" |>
+  compmus_tempogram(window_size = 4, hop_size = 4, cyclic = TRUE) |>
+  ggplot(aes(x = time, y = bpm, fill = power)) +
+  geom_raster() +
+  scale_fill_viridis_c(guide = "none") +
+  labs(x = "Time (s)", y = "Tempo (BPM)") +
+  ggtitle("The Tempogram of AI generated Chinese music track") +  
+  theme_classic()
+
+
+
+"features/ruishan-h-2.json" |>
+  compmus_tempogram(window_size = 4, hop_size = 4, cyclic = TRUE) |>
+  ggplot(aes(x = time, y = bpm, fill = power)) +
+  geom_raster() +
+  scale_fill_viridis_c(guide = "none") +
+  labs(x = "Time (s)", y = "Tempo (BPM)") +
+  ggtitle("The Tempogram of AI generated Japanese music track") +  
+  theme_classic()
+
+
+
+
+
+
 ```
 
 
