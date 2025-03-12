@@ -364,6 +364,23 @@ source("compmus.R")
 
 ### Clustering
 
+```{r}
+
+
+library(tidyverse)
+
+source("compmus.R")
+
+library(signal)
+
+"features/ruishan-h-1.json" |>
+  compmus_energy_novelty() |> 
+  ggplot(aes(t, novelty)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = "Time (s)", y = "Energy Novelty")
+
+```
 
 
 
