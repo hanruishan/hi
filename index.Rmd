@@ -526,6 +526,35 @@ library(signal)
   theme_classic()
 
 
+
+"features/ruishan-h-1.json" |>                           # Change the track
+  compmus_mfccs(norm = "identity") |>                  # Change the norm
+  ggplot(aes(x = time, y = mfcc, fill = value)) + 
+  geom_raster() +
+  scale_y_continuous(
+    breaks = 0:12,
+    minor_breaks = NULL,
+  ) +
+  scale_fill_viridis_c(guide = "none") +               # Change the colours?
+  labs(x = "Time (s)", y = "Coefficient Number", fill = NULL) +
+  ggtitle("The Cepstrogram of AI generated Chinese music track") +  
+  theme_classic()          
+
+
+
+"features/ruishan-h-2.json" |>                           # Change the track
+  compmus_mfccs(norm = "identity") |>                  # Change the norm
+  ggplot(aes(x = time, y = mfcc, fill = value)) + 
+  geom_raster() +
+  scale_y_continuous(
+    breaks = 0:12,
+    minor_breaks = NULL,
+  ) +
+  scale_fill_viridis_c(guide = "none") +               # Change the colours?
+  labs(x = "Time (s)", y = "Coefficient Number", fill = NULL) +
+  ggtitle("The Cepstrogram of AI generated Japanese music track") +  
+  theme_classic()   
+
 ```
 
 
