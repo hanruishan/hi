@@ -490,7 +490,40 @@ library(signal)
 
 
 
+"features/ruishan-h-2.json" |>                    # 替换为你的音频文件
+  compmus_chroma(norm = "chebyshev") |>         # 选择归Manhattan化方法，例如 "manhattan"
+  ggplot(aes(x = time, y = pc, fill = value)) +
+  geom_raster() +
+  scale_y_continuous(
+    breaks = 0:11,
+    labels = c(
+      "C", "C#|Db", "D", "D#|Eb",
+      "E", "F", "F#|Gb", "G",
+      "G#|Ab", "A", "A#|Bb", "B"
+    )
+  ) +
+  scale_fill_gradient(low = "white", high = "black") +  
+  labs(x = "Time (s)", y = "Pitch Class", fill = "Energy") +
+  ggtitle("The Chromagram of AI generated Japanese music track") +  
+  theme_classic()
 
+
+"features/ruishan-h-1.json" |>                    # 替换为你的音频文件
+  compmus_chroma(norm = "chebyshev") |>         # 选择归Manhattan化方法，例如 "manhattan"
+  ggplot(aes(x = time, y = pc, fill = value)) +
+  geom_raster() +
+  scale_y_continuous(
+    breaks = 0:11,
+    labels = c(
+      "C", "C#|Db", "D", "D#|Eb",
+      "E", "F", "F#|Gb", "G",
+      "G#|Ab", "A", "A#|Bb", "B"
+    )
+  ) +
+  scale_fill_gradient(low = "white", high = "black") +  
+  labs(x = "Time (s)", y = "Pitch Class", fill = "Energy") +
+  ggtitle("The Chromagram of AI generated Chinese music track") +  
+  theme_classic()
 
 
 ```
