@@ -59,6 +59,8 @@ This is the audio of the AI generated Japanese music track:
 
 ### Track-level features
 
+
+
 ```{r}
 
 library(ggplot2)
@@ -121,7 +123,8 @@ ggplot(class_data_long, aes(x = value, fill = variable)) +
 
 ### Chroma features [pitch]
 
-
+![](Rplot02.png){width=45%}
+![](Rplot04.png){width=45%}
 
 ```{r}
 
